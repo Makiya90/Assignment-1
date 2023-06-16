@@ -1,0 +1,135 @@
+ font-face {
+    font-family: 'Times New Roman', Times, serif;
+    src: url("MgOpenModernBold.ttf");
+    font-weight: normal;
+  }
+ font-face {
+    font-family: 'Times New Roman', Times, serif;
+    src: url("MgOpenModernBold.ttf");
+    font-weight: bold;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  
+  html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    font-weight: 200;
+  }
+
+  
+  :-moz-selection {
+    background-color: #f37925;
+    color: #fac670;
+  }
+
+  
+::selection {
+    background-color: orchid;
+    color: yellowgreen;
+  }
+
+  
+  .col2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: rgba(18, 39, 34, 0.237);
+    padding: 20px;
+  }
+  .left header{
+    display: flex;
+    justify-content: space-between;
+    height: clamp(1rem, 3vw, 4rem);
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .left header h2 {
+    font-size: clamp(1rem, 2vw, 4rem);
+    letter-spacing: -0.05rem;
+  }
+  .left header img {
+    height: 100%;
+    max-height: 100px;
+  }
+  .left .middle {
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
+    line-height: 0.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+  }
+  .left .middle span {
+    color: #fac670;
+  }
+
+
+  .right {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: powderblue;
+  }
+
+  .right .piano {
+    width: 100%;
+    color: paleturquoise;
+    position: relative;
+  }
+  .right .bottom-keys {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(30px);
+  }
+  .right .bottom-keys .key {
+    background-color: rgb(34, 142, 106);
+    margin: 4px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .right .bottom-keys .key div {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 4em;
+    width: 4em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .right .top-keys {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(170px);
+    justify-content: space-between;
+    position: absolute;
+    width: 120%;
+    top: 55px;
+    height: 700%;
+  }
+  .right .top-keys .key {
+    background-color: skyblue;
+    margin: 4px;
+    border-radius: 8px;
+    padding: 10px;
+   }
+  .right .top-keys .key div {
+    background-color: rgba(102, 164, 31, 0.2);
+    height: 5em;
+    width: 5em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+ }
